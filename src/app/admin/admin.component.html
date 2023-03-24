@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="container">
+    <h3>Enter Instructor Details</h3>
+    <form>
+      <div class="form-group" style="padding: 50px; border: 1px">
+        <label for="firstName"> Instructor name: </label>
+        <input id="firstName" type="text" class="form-control" />
+        <label for="ID"> Instructor ID:</label>
+        <input id="ID" type="text" class="form-control" />
+
+        <br />
+
+        <div class="selector">
+          Avaiable Time:
+          <select>
+            <option *ngFor="let i of time" value="{{ i.ID }}">
+              {{ i.Time }}
+            </option>
+          </select>
+        </div>
+        <br />
+
+        <div class="selector">
+          Avaiable Days:
+          <div *ngFor="let i of days">
+            <label for="checkbox">{{ i.Day }}</label>
+            <input type="checkbox" value="{{ i.ID }}" />
+          </div>
+        </div>
+        <br />
+
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

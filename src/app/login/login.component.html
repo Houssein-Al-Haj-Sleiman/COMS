@@ -1,0 +1,22 @@
+<div class="Main-bg">
+  <div class="Form-area">
+    <h1>Log In</h1>
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+      <div class="form">
+        <div>
+          <h1>ID</h1>
+          <input type="password" formControlName="ID" />
+        </div>
+        <br />
+        <div>
+          <h1>Password</h1>
+          <input type="password" formControlName="Password" />
+        </div>
+        <br />
+        <div id="btn">
+          <button type="submit">Log In</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<!-- Upload  -->
+<form id="file-upload-form" class="uploader">
+  <input
+    id="file-upload"
+    type="file"
+    name="fileUpload"
+    accept=".xlsx,.xlsb"
+    (change)="fileUploadStd($event)"
+  />
+  <button (click)="Upload()">Upload</button>
+</form>
